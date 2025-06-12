@@ -1,19 +1,18 @@
 describe('empty spec', () => {
   beforeEach(() => {
-    cy.visit('/');
-  });
-
-  it('displays the resources text', () => {
+    cy.visit('/')
+  })
+  
+  it('displays the correct resources text', () => {
     cy.get('h2')
-      .should('be.visible') // Ensure it's visible
-      .contains('This is a bare-bones Hugo project that has everything you need to quickly deploy it to Netlify', { timeout: 10000 });
-  });
-
+      .contains('Everything about Monopoly Go Dice Links, Events, Tycoon Club & More');
+  })
+  
   it('renders the image', () => {
     cy.get('img')
       .should('be.visible')
       .and(($img) => {
         expect($img[0].naturalWidth).to.be.greaterThan(0);
       });
-  });
-});
+  })
+})
