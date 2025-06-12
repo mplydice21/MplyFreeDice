@@ -1,4 +1,4 @@
-baseURL: "http://hugo-quickstart-template.netlify.com"
+baseURL: "http://mplyfreedice.netlify.com"
 languageCode: "en-us"
-title: "Netlify + Hugo Quickstart"
+title: "MplyFreeDice"
 theme: "netlify-basic"
